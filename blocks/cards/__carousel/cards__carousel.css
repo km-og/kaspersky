@@ -1,0 +1,7 @@
+.cards__carousel {
+  width: 1254px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 24px auto;
+}

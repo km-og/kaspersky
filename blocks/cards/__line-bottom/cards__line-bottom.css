@@ -1,0 +1,5 @@
+.cards__line-bottom {
+  border-radius: 0 0 4px 4px;
+  border: 2px solid #00a88e;
+  width: 256px;
+}

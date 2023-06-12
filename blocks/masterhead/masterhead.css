@@ -1,0 +1,11 @@
+@media screen and (max-width: 1023px) {
+  .masterhead {
+    max-width: 1023px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .masterhead {
+    max-width: 767px;
+  }
+}

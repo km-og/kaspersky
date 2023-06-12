@@ -1,0 +1,19 @@
+.content__title {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1d1d1b;
+}
+
+@media screen and (max-width: 1023px) {
+  .content__title {
+    max-width: 445px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content__title {
+    display: none;
+  }
+}

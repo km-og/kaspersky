@@ -1,0 +1,14 @@
+.content__subtitle-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .content__subtitle-mobile {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 4px 0 0;
+    width: 312px;
+  }
+}

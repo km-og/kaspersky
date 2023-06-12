@@ -1,0 +1,6 @@
+.buttons__line_type_active {
+  border: 2px solid #00a88e;
+  width: 82px;
+  margin-top: 8px;
+  height: 0;
+}

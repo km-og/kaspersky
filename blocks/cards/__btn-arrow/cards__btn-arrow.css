@@ -1,0 +1,15 @@
+.cards__btn-arrow {
+  margin: 0;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.cards__btn-arrow:first-of-type {
+  margin-right: 17px;
+}
+
+.cards__btn-arrow:last-of-type {
+  margin-left: 17px;
+}

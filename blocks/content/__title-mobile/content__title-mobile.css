@@ -1,0 +1,13 @@
+.content__title-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .content__title-mobile {
+    display: block;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 32px 0 0;
+  }
+}

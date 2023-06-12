@@ -1,0 +1,10 @@
+.cards__price {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 24px;
+}
+.cards__accent {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+}
