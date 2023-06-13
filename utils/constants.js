@@ -8,6 +8,9 @@ const listItems = cardsList.children;
 const dots = cards.querySelector(".dots");
 const dotsList = dots.children;
 
+const cardsContainer = document.querySelector(".cards__container");
+const cardsArray = document.querySelectorAll(".cards__item");
+
 export {
   buttons,
   cards,
@@ -17,4 +20,6 @@ export {
   listItems,
   dots,
   dotsList,
+  cardsContainer,
+  cardsArray,
 };

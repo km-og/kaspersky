@@ -4,6 +4,8 @@ import {
   listItems,
   dots,
   dotsList,
+  cardsContainer,
+  cardsArray,
 } from "../utils/constants.js";
 
 // обработка переключения кнопок
@@ -24,14 +26,58 @@ function handleBtnClick(evt) {
 
 // карусель
 
+const scrollDotLeft = () => {
+  dots.append(dotsList[0]);
+};
+
 const scrollLeft = () => {
   cardsList.append(listItems[0]);
-  dots.append(dotsList[0]);
+  scrollDotLeft();
+};
+
+const scrollDotRight = () => {
+  dots.prepend(dotsList[3]);
 };
 
 const scrollRidht = () => {
   cardsList.prepend(listItems[3]);
-  dots.prepend(dotsList[3]);
+  scrollDotRight();
 };
 
-export { handleBtnClick, scrollRidht, scrollLeft };
+// Определяем текущую карточку
+
+let currentCard = 0;
+
+// Обработка свайпа
+
+function handleSwipe(touchStartX, touchEndX) {
+  const minSwipeDistance = 100;
+
+  if (touchStartX - touchEndX > minSwipeDistance) {
+    // Пролистываем влево
+
+    currentCard++;
+    scrollCard(currentCard);
+    scrollDotRight();
+  } else if (touchEndX - touchStartX > minSwipeDistance) {
+    // Пролистываем вправо
+
+    currentCard--;
+    scrollCard(currentCard);
+    scrollDotLeft();
+  }
+}
+
+// Прокручиваем карусель до выбранной карточки
+
+function scrollCard(cardIndex) {
+  const cardWidth = cardsArray[cardIndex].offsetWidth;
+  const cardPosition = -cardWidth * cardIndex;
+  cardsList.style.transform = `translateX(${cardPosition}px)`;
+}
+
+// Устанавливаем начальную позицию карусели
+
+scrollCard(currentCard);
+
+export { handleBtnClick, scrollRidht, scrollLeft, handleSwipe, scrollCard };
