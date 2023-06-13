@@ -4,3 +4,9 @@
   border: 2px solid #00a88e;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+  .cards__btn_type_secondary {
+    margin: 8px auto 33px;
+  }
+}

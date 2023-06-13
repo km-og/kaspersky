@@ -1,0 +1,22 @@
+.buttons__list {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttons__list {
+    max-width: 720px;
+    gap: 44px;
+    border-bottom: 0.5px solid #ccc;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .buttons__list {
+    display: none;
+  }
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Inessa">
+  <meta name="author" content="Inessa Kim">
   <meta name="description" content="Test task for Kaspersky">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Test task</title>
@@ -35,6 +35,8 @@
     <main class="masterhead">
 
       <img src="./images/Image.png" alt="The family looks at the tablet" class="masterhead__img">
+      <img src="./images/ImageTablet.png" alt="The family looks at the tablet" class="masterhead__img">
+      <img src="./images/ImageMobile.png" alt="The family looks at the tablet" class="masterhead__img">
 
       <section class="content">
         <button type="button" class="content__btn button">If you need an Special Offer Block</button>
@@ -50,50 +52,65 @@
         </p>
       </section>
 
-      <ul class="buttons">
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/IconAll-active.svg" alt="icon" class="buttons__img">
-            <p class="buttons__name buttons__name_type_active">All</p>
-            <div class="buttons__line buttons__line_type_active"></div>
-          </button>
-        </li>
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/Windows.svg" alt="icon" class="buttons__img">
-            <p class="buttons__name ">Windows</p>
-            <div class="buttons__line"></div>
-          </button>
-        </li>
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/macOS.svg" alt="icon" class="buttons__img buttons__macos">
-            <p class="buttons__name ">macOS</p>
-            <div class="buttons__line"></div>
-          </button>
-        </li>
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/Android.svg" alt="icon" class="buttons__img buttons__android">
-            <p class="buttons__name ">Android</p>
-            <div class="buttons__line"></div>
-          </button>
-        </li>
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/iOS.svg" alt="icon" class="buttons__img buttons__ios">
-            <p class="buttons__name ">iPhone & iPad</p>
-            <div class="buttons__line"></div>
-          </button>
-        </li>
-        <li class="buttons__item">
-          <button class="buttons__btn button" type="button">
-            <img src="./images/tag1.svg" alt="icon" class="buttons__img">
-            <p class="buttons__name ">Free tools</p>
-            <div class="buttons__line"></div>
-          </button>
-        </li>
-      </ul>
+      <section class="buttons">
+
+        <ul class="buttons__list">
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/IconAll-active.svg" alt="icon" class="buttons__img">
+              <p class="buttons__name buttons__name_type_active">All</p>
+              <div class="buttons__line buttons__line_type_active"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/Windows.svg" alt="icon" class="buttons__img">
+              <p class="buttons__name ">Windows</p>
+              <div class="buttons__line"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/macOS.svg" alt="icon" class="buttons__img buttons__macos">
+              <p class="buttons__name ">macOS</p>
+              <div class="buttons__line"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/Android.svg" alt="icon" class="buttons__img buttons__android">
+              <p class="buttons__name ">Android</p>
+              <div class="buttons__line"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/iOS.svg" alt="icon" class="buttons__img buttons__ios">
+              <p class="buttons__name ">iPhone & iPad</p>
+              <div class="buttons__line"></div>
+            </button>
+          </li>
+          <li class="buttons__item">
+            <button class="buttons__btn button" type="button">
+              <img src="./images/tag1.svg" alt="icon" class="buttons__img">
+              <p class="buttons__name ">Free tools</p>
+              <div class="buttons__line"></div>
+            </button>
+          </li>
+        </ul>
+
+        <form class="buttons__form">
+          <select class="buttons__select" id="select-app" name="select-app">
+            <option value="All">All</option>
+            <option value="Windows">Windows</option>
+            <option value="macOS">macOS</option>
+            <option value="Android">Android</option>
+            <option value="iPhone & iPad">iPhone & iPad</option>
+            <option value="Free tools">Free tools</option>
+          </select>
+        </form>
+
+      </section>
 
       <section class="cards">
         <div class="cards__carousel">

@@ -6,3 +6,9 @@
   height: 80px;
   text-align: center;
 }
+
+@media screen and (max-width: 1024px) {
+  .cards__text {
+    margin: 8px auto 0;
+  }
+}

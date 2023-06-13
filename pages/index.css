@@ -22,6 +22,7 @@
 @import url(../blocks/button/button.css);
 
 @import url(../blocks/buttons/buttons.css);
+@import url(../blocks/buttons/__list/buttons__list.css);
 @import url(../blocks/buttons/__item/buttons__item.css);
 @import url(../blocks/buttons/__btn/buttons__btn.css);
 @import url(../blocks/buttons/__img/buttons__img.css);
@@ -32,7 +33,11 @@
 @import url(../blocks/buttons/__name/_type/buttons__name_type_active.css);
 @import url(../blocks/buttons/__line/_type/buttons__line_type_active.css);
 
+@import url(../blocks/buttons/__form/buttons__form.css);
+@import url(../blocks/buttons/__select/buttons__select.css);
+
 @import url(../blocks/cards/__carousel/cards__carousel.css);
+@import url(../blocks/cards/__container/cards__container.css);
 @import url(../blocks/cards/__btn-arrow/cards__btn-arrow.css);
 @import url(../blocks/cards/__list/cards__list.css);
 @import url(../blocks/cards/__item/cards__item.css);
@@ -50,8 +55,8 @@
 @import url(../blocks/cards/__price/cards__price.css);
 @import url(../blocks/cards/__text/cards__text.css);
 @import url(../blocks/cards/__line/cards__line.css);
-@import url(../blocks/cards/__line/_type/cards__btn_type_primary.css);
-@import url(../blocks/cards/__line/_type/cards__btn_type_secondary.css);
+@import url(../blocks/cards/__btn/_type/cards__btn_type_primary.css);
+@import url(../blocks/cards/__btn/_type/cards__btn_type_secondary.css);
 @import url(../blocks/cards/__line-bottom/cards__line-bottom.css);
 
 @import url(../blocks/dots/dots.css);

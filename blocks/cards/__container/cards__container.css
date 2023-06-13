@@ -1,0 +1,14 @@
+.cards__container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1254px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+}

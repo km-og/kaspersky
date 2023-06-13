@@ -6,7 +6,7 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .content {
     max-width: 768px;
     margin: 22px auto 0;
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 767px) {
   .content {
-    max-width: 360px;
+    max-width: 312px;
     margin: 152px auto 0;
     display: flex;
     flex-direction: column;

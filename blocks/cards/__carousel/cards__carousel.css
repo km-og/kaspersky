@@ -1,7 +1,16 @@
 .cards__carousel {
-  width: 1254px;
+  max-width: 1254px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 24px auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__carousel {
+    max-width: 720px;
+    margin: 22px auto 0;
+    padding-left: 0;
+  }
 }

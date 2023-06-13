@@ -2,3 +2,9 @@
   border: 0.5px solid #cccccc;
   width: 40px;
 }
+
+@media screen and (max-width: 1024px) {
+  .cards__line {
+    margin: 5px auto 0;
+  }
+}

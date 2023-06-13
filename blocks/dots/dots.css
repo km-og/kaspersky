@@ -3,4 +3,11 @@
   flex-direction: row;
   gap: 8px;
   justify-content: center;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .dots {
+    margin-top: 16px;
+  }
 }

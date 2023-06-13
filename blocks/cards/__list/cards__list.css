@@ -1,7 +1,18 @@
 .cards__list {
   display: flex;
+  width: 9999px;
   flex-direction: row;
   gap: 28px;
   padding: 0;
-  /* width: 1108px; */
+  margin: 0;
+  transform: translateX(256px);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards__list {
+    max-width: 768px;
+    margin: 22px auto 0;
+    padding-left: 0;
+  }
 }

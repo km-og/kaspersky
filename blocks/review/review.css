@@ -6,3 +6,9 @@
   align-items: center;
   gap: 4px;
 }
+
+@media screen and (max-width: 1024px) {
+  .review {
+    margin: 25px auto 0;
+  }
+}

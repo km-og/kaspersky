@@ -13,3 +13,9 @@
 .cards__btn-arrow:last-of-type {
   margin-left: 17px;
 }
+
+@media screen and (max-width: 767px) {
+  .cards__btn-arrow {
+    display: none;
+  }
+}

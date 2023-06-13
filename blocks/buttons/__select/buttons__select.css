@@ -1,0 +1,10 @@
+.buttons__select {
+  padding: 14px 80px 14px 8px;
+  width: 100%;
+  color: #444;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid #23d1ae;
+  box-sizing: border-box;
+}
