@@ -4,8 +4,19 @@ import {
   listItems,
   dots,
   dotsList,
-  cardsContainer,
   cardsArray,
+  page,
+  headerLinks,
+  title,
+  titleMob,
+  subtitle,
+  subtitleMob,
+  btnsName,
+  iconWindows,
+  iconMac,
+  iconAndroid,
+  iconIos,
+  iconFree,
 } from "../utils/constants.js";
 
 // обработка переключения кнопок
@@ -80,4 +91,32 @@ function scrollCard(cardIndex) {
 
 scrollCard(currentCard);
 
-export { handleBtnClick, scrollRidht, scrollLeft, handleSwipe, scrollCard };
+// переключатель темы
+
+function switchTheme() {
+  page.classList.toggle("darkTheme");
+  headerLinks.forEach((item) => {
+    item.classList.toggle("darkTheme__header");
+  });
+  title.classList.toggle("darkTheme__text");
+  titleMob.classList.toggle("darkTheme__text");
+  subtitle.classList.toggle("darkTheme__text");
+  subtitleMob.classList.toggle("darkTheme__text");
+  btnsName.forEach((item) => {
+    item.classList.toggle("darkTheme__text");
+  });
+  iconWindows.src = "./images/WindowsDark.svg";
+  iconMac.src = "./images/macOSDark.svg";
+  iconAndroid.src = "./images/AndroidDark.svg";
+  iconIos.src = "./images/iOSDark.svg";
+  iconFree.src = "./images/tag1Dark.svg";
+}
+
+export {
+  handleBtnClick,
+  scrollRidht,
+  scrollLeft,
+  handleSwipe,
+  scrollCard,
+  switchTheme,
+};

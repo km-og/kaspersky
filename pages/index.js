@@ -3,12 +3,14 @@ import {
   btnNext,
   btnPrev,
   cardsContainer,
+  btnTheme,
 } from "../utils/constants.js";
 import {
   handleBtnClick,
   scrollRidht,
   scrollLeft,
   handleSwipe,
+  switchTheme,
 } from "../utils/utils.js";
 
 // слушатель переключения кнопок
@@ -34,3 +36,7 @@ cardsContainer.addEventListener("touchend", (e) => {
   touchEndX = e.changedTouches[0].clientX;
   handleSwipe(touchStartX, touchEndX);
 });
+
+// слушатель переключателя темы
+
+btnTheme.addEventListener("click", switchTheme);
